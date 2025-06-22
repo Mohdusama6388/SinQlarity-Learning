@@ -1,0 +1,24 @@
+table {
+    font-family: arial,sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    background-color: whitesmoke;
+    padding: top 3%; ;
+    margin-left: auto;
+    margin-right: auto;
+}
+td,th{
+    border: 1px solid;
+    text-align: left;
+    padding: 8px ;
+}
+h2 {
+    text-align: center;
+    border:black;
+    font-style: oblique;
+    padding: 3%;
+    background-color: brown;
+    width: 64% ;
+    margin-left: auto;
+    margin-right: auto;
+}
