@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>Registration form</h1>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form onsubmit="data()" action="out.html" >
+        <label for="fname">First Name : </label><br>
+        <input type="text" placeholder="Enter first name"  id="namefirst"> <br >
+        <label for="fname">last name :</label><br>
+        <input type="text"  placeholder="Enter last name" id="namelast"><br>
+        <label>Email :</label><br>
+        <input type="email" id="Email"placeholder="name@gmail.com" ><br>
+        <label>Contact number :</label><br>
+        <input type="number"placeholder="Enter your mobile number" id="Contact"><br>
+        <label for="DOB">Date of birth(dd-mm-yyyy) :</label><br>
+        <input type="date"placeholder="dd-mm-yyyy" id="DOB"><br>
+        <label> Age :</label><br>
+        <input type="number"placeholder="Enter age" id="AGE"><br>
+        <label for=" Gender">Gender</label><br>
+        <input type="radio" id="genderselect" name="gender" >Male<br>
+        <label for="female"></label>
+        <input type="radio"id="genderselect"name="gender">Female<br>
+        <label for="upload file">Resume file :</label><br>
+        <input type="file" id="Fileupload"><br><br>
+        <input type="submit"id="btnsubmit">
+     </form>
+     <script src="form.js"></script>
+    
+</body>
+</html>

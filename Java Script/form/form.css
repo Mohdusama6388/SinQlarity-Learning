@@ -1,0 +1,37 @@
+input{
+padding: 0%;
+border-color: brown;
+text-align: justify;
+background-color:white;
+margin-left: auto;
+margin-right: auto;
+
+}
+label{
+    color: brown;
+    font-style: normal;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+h1{
+    text-align: center;
+    font-size: medium;
+    border: 0cap;
+    background-color:brown;
+    padding: 0%;
+
+}
+form{
+    background: fixed;
+    background-color: beige;
+    border: 0cm;
+    align-items: center;
+    border: 30px; 
+    border-color: brown;
+
+   
+}
+
+
