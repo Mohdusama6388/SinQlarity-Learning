@@ -1,55 +1,58 @@
-function data(){
-const fname=document.getElementById("namefirst").value ;
-const lname=document.getElementById("namelast" ).value;
-const email=document.getElementById("Email").value;
-const mobileno=document.getElementById("contact").value;
-const dob=document.getElementById("DOB" ).value;
-const gender=document.getElementById("genderselect").value;
-const age=document.getElementById("AGE").value;
-const Fileupload=document.getElementById("Fileupload").value;
-    if (fname==""|| lname=="" )
-{    alert("enter first and last name ")
-    return false;
-    
-     }
-     if(email==""){
-        alert("enter yo ur email")
-        return false ;
-     }
-     if (Fileupload==""){
-        alert("please  upload  a file")
-        return false ;
-     }
-     if (mobileno.length<10 || mobileno.length>10)
-     {
-        alert("number should be 10 digit ,please enter valid number ");
-         return false ;
-     }
-     else if (isNaN(mobileno))
-   {
-     alert ("only enter  integer number ")
-        return false ;
+function validationForm(event) {
+   event.preventdefault();
+   const first_name = document.getElementById("fname").value;
+   const last_name = document.getElementById("lname").value;
+   const Email_id = document.getElementById("Email").value;
+   const Mobile_no = document.getElementById("contact").value;
+   const Date_of_birth = document.getElementById("DOB").value;
+   const Select_gender = document.getElementsByName("gender").value;
+   const Enter_age = document.getElementById("AGE").value;
+   const File_upload = document.getElementById("Fileupload").value;
 
-     }
-   else if (age<0||age>=110)
-   {
-   alert("please enter  a valid age")
-    return false ;
-     }
-     if(dob==""){
-        alert("Please fill your dob")
-    return false ;
-     }
-   else if (gender == ""){
-    alert("please choose your gender")
-    return false ;
+   if (first_name == "") {
+      alert("please enter your first name.");
+      return false;
    }
- else{
-alert("your detail has been successfully Register")
-true
- }
-    
- }
+
+   if (last_name  == "") {
+      alert("please enter your last name");
+      return false;
+   }
+
+
+   if (Email_id  == "" || !Email_id .includes("@") || !Email_id .includes(".")) {
+      alert("please enter your valid email");
+      return false;
+   }
+   if (File_upload == "") {
+      alert("please  upload  a file");
+      return false;
+   }
+   if (Mobile_no == "" || !/^\d{10}$/.match(Mobile_no)) {
+      alert("number should be 10 digit ,please enter valid number ");
+      return false;
+
+   }
+   if (Enter_age < 0 || Enter_age >= 110) {
+      alert("please enter valid age ");
+      return false;
+   }
+   if (Date_of_birth == "") {
+      alert("Please fill your dob")
+      return false;
+   }
+   else if (Select_gender == "") {
+      alert("please choose your gender");
+      return false;
+   }
+   else {
+      alert("form submitted successfully !");
+      return true;
+   }
+}
+const user_form = document.getElementById("user_form");
+user_form.addEventListener("submit",validationForm);
+
 
 
 
