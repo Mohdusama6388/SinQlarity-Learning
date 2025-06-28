@@ -1,15 +1,15 @@
 function validationForm(event) {
-   event.preventdefault();
-   const first_name = document.getElementById("fname").value;
+   event.preventDefault();
+   const first_name = document.getElementById("fname1").value;
    const last_name = document.getElementById("lname").value;
    const Email_id = document.getElementById("Email").value;
-   const Mobile_no = document.getElementById("contact").value;
+   const Mobile_no = document.getElementById("Contact").value;
    const Date_of_birth = document.getElementById("DOB").value;
    const Select_gender = document.getElementsByName("gender").value;
    const Enter_age = document.getElementById("AGE").value;
    const File_upload = document.getElementById("Fileupload").value;
-
-   if (first_name == "") {
+ console.log(first_name);
+   if (first_name =="") {
       alert("please enter your first name.");
       return false;
    }
@@ -28,7 +28,7 @@ function validationForm(event) {
       alert("please  upload  a file");
       return false;
    }
-   if (Mobile_no == "" || !/^\d{10}$/.match(Mobile_no)) {
+   if (Mobile_no == "" || !/^\d{10}$/.test(Mobile_no)) {
       alert("number should be 10 digit ,please enter valid number ");
       return false;
 
@@ -41,7 +41,7 @@ function validationForm(event) {
       alert("Please fill your dob")
       return false;
    }
-   else if (Select_gender == "") {
+    if (Select_gender == "") {
       alert("please choose your gender");
       return false;
    }
@@ -49,11 +49,8 @@ function validationForm(event) {
       alert("form submitted successfully !");
       return true;
    }
-}
-const user_form = document.getElementById("user_form");
-user_form.addEventListener("submit",validationForm);
-
-
-
+ }
+ const user_form = document.getElementById("user_form");
+ user_form.addEventListener("submit",validationForm);
 
 
