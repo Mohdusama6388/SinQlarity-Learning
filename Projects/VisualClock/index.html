@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, 
+				initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="clock">
+
+		<h3> Alarm clock</h3>
+		<div  class="time" id="time">00:00:00</div>
+		<h3>STOPWATCH</h3>
+
+		 <div class="stopwatch" >00:00:00</div>
+	<div>
+		<button id="startwatch">START </button>
+		<button id="stop">STOP</button>
+		<button id="Resetwatch">RESET</button>
+		 </div>
+	     <div class="input-field"><label for="alarmTime">Select Time:</label>
+		<input type="datetime-local" id="alarmTime"class="alarm-input" onchange="setAlarmTime(this.value)">
+		</div>
+		<div>
+		<button id="setAlarm" onclick="setAlarm()">SET ALARM</button>
+		<button id="clearAlarm" onclick="clearAlarm()">CLEAR ALARM</button>
+		</div>
+		 <div class="alarms" id="alarms"></div>
+	</div>
+	
+	<script src="index.js"></script>
+	
+</body>
+</html>
