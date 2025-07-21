@@ -12,27 +12,26 @@
 <body>
 	<div class="clock">
 
-		<h3> Alarm clock</h3>
-		<div  class="time" id="time">00:00:00</div>
-		<h3>STOPWATCH</h3>
+            <a href="stopwatch.html"><button id="btnstopwatch">STOPWATCH</button></a>
+            <a href="alarm.html"><button id="btnalarm">ALARM</button></a>
+			<a href="timer.html"><button id="btntimer">TIMER</button></a>
 
-		 <div class="stopwatch" >00:00:00</div>
-	<div>
-		<button id="startwatch">START </button>
-		<button id="stop">STOP</button>
-		<button id="Resetwatch">RESET</button>
-		 </div>
-	     <div class="input-field"><label for="alarmTime">Select Time:</label>
-		<input type="datetime-local" id="alarmTime"class="alarm-input" onchange="setAlarmTime(this.value)">
-		</div>
-		<div>
-		<button id="setAlarm" onclick="setAlarm()">SET ALARM</button>
-		<button id="clearAlarm" onclick="clearAlarm()">CLEAR ALARM</button>
-		</div>
-		 <div class="alarms" id="alarms"></div>
+
+		<h3>CLOCK</h3>
+		
+<div id="time">
+    <span id="hours">00</span><span>:</span>
+    <span id="minutes">00</span><span>:</span>
+    <span id="seconds">00</span>
+    <span id="ampm"></span>
+	</div>
+<div>
+  <button id="toggle">SWITCH TO 24-HOUR</button>
+
+		
 	</div>
 	
-	<script src="index.js"></script>
+	<script src="clock.js"></script>
 	
 </body>
 </html>
