@@ -10,11 +10,16 @@ body {
 	background-color: white;
 	padding: 10px;
 	box-sizing: border-box;
+	background-image:url('wallpaper.png') ;
+	background-size:cover ;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 .clock {
 	text-align: center;
-	background-color: #1e3c5e;
+	background-color:transparent;
 	border-radius: 15px;
 	box-shadow: 0 0 25px black;
 	padding: 20px;
@@ -26,7 +31,7 @@ body {
 }
 .clock1 {
 	text-align: center;
-	background-color: #1e3c5e;
+	background-color: transparent;
 	border-radius: 15px;
 	box-shadow: 0 0 25px black;
 	padding: 20px;
