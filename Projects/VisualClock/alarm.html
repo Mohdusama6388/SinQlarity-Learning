@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="clock1">
+        
+            <a href="index.html"><button id="btnvisualclock">CLOCK</button></a>
+            <a href="stopwatch.html"><button id="btnstopwatch">STOPWATCH</button></a>
+            <a href="timer.html"><button id="btntimer">TIMER</button></a>
+
+
+
+    
+        <h3></h3>
+		<!-- <div  class="time" id="time">00:00:00</div> -->
+        <div >
+		<input type="datetime-local" id="alarmTime"class="alarm-input"value="" >
+		</div>
+		<div>
+		<button id="setAlarm" onclick="addAlarm()" >SET ALARM</button>
+		<button id="clearAlarm" onclick="clearAllAlarms()">CLEAR ALARM</button>
+		<ol id="alarmList"></ol>
+		</div>
+		 <div class="alarms" id="alarms"></div>
+	</div>
+
+    </div>
+    <script src="alarm.js"></script>
+    
+</body>
+</html>
