@@ -1,0 +1,5 @@
+{
+"env":{
+"connectionString":"mongodb+srv://mohdusama2362004:ABCD1234@cluster0.iglinrp.mongodb.net/testdb?retryWrites=true&w=majority&appName=Cluster0"
+}
+}
